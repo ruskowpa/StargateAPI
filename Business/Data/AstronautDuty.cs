@@ -11,15 +11,18 @@ namespace StargateAPI.Business.Data
 
         public int PersonId { get; set; }
 
-        public string Rank { get; set; } = string.Empty;
+        public int RankId { get; set; }
 
-        public string DutyTitle { get; set; } = string.Empty;
+        public int DutyTitleId { get; set; }
 
         public DateTime DutyStartDate { get; set; }
 
         public DateTime? DutyEndDate { get; set; }
 
+        // Navigation properties
         public virtual Person Person { get; set; }
+        public virtual Rank Rank { get; set; }
+        public virtual DutyTitle DutyTitle { get; set; }
     }
 
     public class AstronautDutyConfiguration : IEntityTypeConfiguration<AstronautDuty>
@@ -28,6 +31,22 @@ namespace StargateAPI.Business.Data
         {
             builder.HasKey(x => x.Id);
             builder.Property(x => x.Id).ValueGeneratedOnAdd();
+            
+            // Foreign key relationships
+            builder.HasOne(x => x.Person)
+                .WithMany(x => x.AstronautDuties)
+                .HasForeignKey(x => x.PersonId)
+                .OnDelete(DeleteBehavior.Cascade);
+                
+            builder.HasOne(x => x.Rank)
+                .WithMany(x => x.AstronautDuties)
+                .HasForeignKey(x => x.RankId)
+                .OnDelete(DeleteBehavior.Restrict);
+                
+            builder.HasOne(x => x.DutyTitle)
+                .WithMany(x => x.AstronautDuties)
+                .HasForeignKey(x => x.DutyTitleId)
+                .OnDelete(DeleteBehavior.Restrict);
         }
     }
 }
