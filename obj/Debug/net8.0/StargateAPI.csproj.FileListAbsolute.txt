@@ -261,6 +261,3 @@ C:\Users\Patrick\Desktop\StargateAPI\StargateAPI\obj\Debug\net8.0\refint\Stargat
 C:\Users\Patrick\Desktop\StargateAPI\StargateAPI\obj\Debug\net8.0\StargateAPI.pdb
 C:\Users\Patrick\Desktop\StargateAPI\StargateAPI\obj\Debug\net8.0\StargateAPI.genruntimeconfig.cache
 C:\Users\Patrick\Desktop\StargateAPI\StargateAPI\obj\Debug\net8.0\ref\StargateAPI.dll
-C:\Users\Patrick\Desktop\StargateAPI\StargateAPI\bin\Debug\net8.0\StargateAPI.staticwebassets.endpoints.json
-C:\Users\Patrick\Desktop\StargateAPI\StargateAPI\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-C:\Users\Patrick\Desktop\StargateAPI\StargateAPI\obj\Debug\net8.0\staticwebassets\msbuild.StargateAPI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props

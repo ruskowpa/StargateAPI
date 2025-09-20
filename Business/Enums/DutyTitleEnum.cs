@@ -9,3 +9,4 @@ namespace StargateAPI.Business.Enums
         Retired = 5
     }
 }
+

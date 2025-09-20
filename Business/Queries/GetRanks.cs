@@ -67,3 +67,4 @@ namespace StargateAPI.Business.Queries
         public int Level { get; set; }
     }
 }
+

@@ -32,6 +32,47 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "StargateAPI.Controllers.LogsController",
+    "Method": "GetLogs",
+    "RelativePath": "Logs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "limit",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "logLevel",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "source",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "StargateAPI.Business.Queries.GetLogsResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
     "ContainingType": "StargateAPI.Controllers.PersonController",
     "Method": "GetPeople",
     "RelativePath": "Person",

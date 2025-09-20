@@ -9,3 +9,4 @@ namespace StargateAPI.Business.Services
         Task LogTraceAsync(string message, string? source = null, string? method = null, string? additionalData = null);
     }
 }
+

@@ -65,3 +65,4 @@ namespace StargateAPI.Business.Queries
         public string? Description { get; set; }
     }
 }
+

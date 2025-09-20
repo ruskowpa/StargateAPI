@@ -10,3 +10,4 @@ namespace StargateAPI.Business.Enums
         Colonel = 6              // COL
     }
 }
+
